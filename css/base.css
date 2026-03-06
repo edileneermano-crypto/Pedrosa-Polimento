@@ -1,0 +1,167 @@
+/* =========================================================
+   BASE — RESET / VARIÁVEIS / BODY / HEADER / HERO / BOTÕES
+========================================================= */
+
+/* ===== RESET ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+img,
+video{
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== VARIÁVEIS ===== */
+:root{
+  --bg1: #0b1d3a;
+  --bg2: #061126;
+  --dark: #081833;
+
+  --text: #ffffff;
+  --muted: #cfe6ff;
+  --muted2: #9ecbff;
+
+  --primary: #1e66ff;
+  --primaryHover: #0f52d6;
+
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+
+  --shadow: 0 20px 40px rgba(0,0,0,.30);
+  --shadow-strong: 0 18px 45px rgba(0,0,0,.35);
+
+  --border: 1px solid rgba(255,255,255,0.10);
+}
+
+/* ===== BODY ===== */
+body{
+  background: linear-gradient(to bottom, var(--bg1), var(--bg2));
+  color: var(--text);
+}
+
+/* ===== HEADER ===== */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  position: relative;
+}
+
+.logo{
+  height: 64px;
+}
+
+/* ===== NAVEGAÇÃO DESKTOP ===== */
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav a{
+  margin-left: 24px;
+  color: var(--text);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.nav a:hover{
+  color: #6ec1ff;
+}
+
+/* ===== MENU HAMBURGUER ===== */
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span{
+  width: 26px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 3px;
+  transition: .3s ease;
+}
+
+.menu-toggle.is-active span:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.is-active span:nth-child(2){
+  opacity: 0;
+}
+
+.menu-toggle.is-active span:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== HERO ===== */
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 120px 48px;
+  align-items: center;
+}
+
+.hero h1{
+  font-size: 48px;
+}
+
+.hero p{
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.hero-video{
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,.35);
+}
+
+/* ===== BOTÕES ===== */
+.btn{
+  margin-top: 32px;
+  padding: 14px 28px;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background .3s ease, transform .3s ease;
+}
+
+.btn:hover{
+  background: var(--primaryHover);
+  transform: translateY(-2px);
+}

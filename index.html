@@ -8,237 +8,261 @@
 </head>
 <body>
 
-<header class="header">
-  <img src="Imagens/Logo.png" alt="Pedrosa Polimento Geral" class="logo">
+  <!-- HEADER -->
+  <header class="header">
+    <img src="Imagens/Logo.png" alt="Pedrosa Polimento Geral" class="logo">
 
-  <!-- BOTÃO HAMBURGUER -->
-  <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <nav class="nav">
-    <a href="#inicio">Início</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#produtos">Produtos</a>
-    <a href="#videos">Vídeos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section id="inicio" class="hero">
-  <div class="hero-text">
-    <h1>Eleve o valor das suas peças<br>com acabamento espelhado</h1>
-    <p>
-      Ajudamos empresas a aumentar o valor de venda de seus produtos por meio
-      de polimento profissional de alto padrão, reduzindo custos com retrabalho,
-      desperdícios e descartes de material.
-    </p>
-    <button class="btn">Solicitar orçamento</button>
-  </div>
-
-  <div class="hero-img">
-    <!-- imagem real aqui -->
-    <img src="Imagens/Home.png" alt="Polimento profissional">
-  </div>
-</section>
-
-<!-- SERVIÇOS -->
-<section id="servicos" class="section dark">
-  <h2>Nossos Serviços</h2>
-
-  <div class="grid-3">
-    <div class="card reveal">
-      <img src="Imagens/Inox.png" alt="Polimento de Inox">
-      <h3>Polimento de Inox</h3>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1>Eleve o valor das suas peças<br>com acabamento espelhado</h1>
       <p>
-        Tratamento técnico para inox que elimina riscos, rebarbas e imperfeições,
-        garantindo brilho uniforme, estética premium e maior durabilidade.
+        Ajudamos empresas a aumentar o valor de venda de seus produtos por meio
+        de polimento profissional de alto padrão, reduzindo custos com retrabalho,
+        desperdícios e descartes de material.
+      </p>
+      <button class="btn" onclick="irParaContato()">
+        Solicitar orçamento
+      </button>
+    </div>
+
+    <div class="hero-img">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="Videos/hero (2).mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section dark">
+    <h2>Nossos Serviços</h2>
+
+    <div class="grid-3">
+      <article class="card reveal">
+        <img src="Imagens/Inox.png" alt="Polimento de Inox">
+        <h3>Polimento de Inox</h3>
+        <p>
+          Tratamento técnico para inox que elimina riscos, rebarbas e imperfeições,
+          garantindo brilho uniforme, estética premium e maior durabilidade.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <img src="Imagens/Cuba.png" alt="Polimento de Cubas">
+        <h3>Polimento de Cubas</h3>
+        <p>
+          Acabamento espelhado em cubas de pia, elevando o padrão visual do produto
+          final e agregando valor comercial.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <img src="Imagens/Industria.png" alt="Polimento Industrial">
+        <h3>Polimento Industrial</h3>
+        <p>
+          Processos voltados à produção em escala, com alta produtividade,
+          padronização de acabamento e redução de custos operacionais.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <img src="Imagens/Pia fosca.png" alt="Acetinamento com Scotch-Brite">
+        <h3>Acetinamento com Scotch-Brite</h3>
+        <p>
+          Acabamento acetinado realizado com Scotch-Brite, ideal para proporcionar
+          textura uniforme, remover marcas superficiais e garantir um visual moderno
+          e profissional em peças de inox.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="section">
+    <h2>O que Polimos</h2>
+
+    <div class="grid-4 reveal">
+      <div class="card simple">Cubas de Pia</div>
+      <div class="card simple">Peças em Inox</div>
+      <div class="card simple">Componentes Industriais</div>
+      <div class="card simple">Peças Sob Medida</div>
+    </div>
+  </section>
+
+  <!-- VÍDEOS -->
+  <section id="videos" class="section dark">
+    <h2>Vídeos dos Trabalhos</h2>
+
+    <div class="videos reveal">
+      <div class="video">Vídeo demonstrativo 1</div>
+      <div class="video">Vídeo demonstrativo 2</div>
+      <div class="video">Vídeo demonstrativo 3</div>
+    </div>
+  </section>
+
+  <!-- MISSÃO, VISÃO E VALORES -->
+  <section id="mvv" class="section mvv">
+    <div class="mvv-header">
+      <span class="mvv-badge">Quem somos</span>
+      <h2>Missão, Visão e Valores</h2>
+      <p>
+        Nosso compromisso é entregar acabamento de alto padrão, valorizando cada peça
+        com qualidade, segurança e eficiência.
       </p>
     </div>
 
-    <div class="card reveal">
-      <img src="Imagens/Cuba.png" alt="Polimento de Cubas">
-      <h3>Polimento de Cubas</h3>
-      <p>
-        Acabamento espelhado em cubas de pia, elevando o padrão visual do produto
-        final e agregando valor comercial.
-      </p>
+    <div class="mvv-grid">
+      <article class="card mvv-card reveal">
+        <div class="mvv-icon">
+          <img src="Ícones/Missão.png" alt="Missão">
+        </div>
+        <h3>Missão</h3>
+        <p>
+          Oferecer serviços especializados de polimento em metais com excelência,
+          proporcionando acabamento de alto padrão, valorização das peças e maior
+          durabilidade dos materiais. Nosso compromisso é atender cada cliente com
+          qualidade, agilidade e precisão, contribuindo para a redução de desperdícios
+          e aumento do valor final dos produtos.
+        </p>
+      </article>
+
+      <article class="card mvv-card reveal">
+        <div class="mvv-icon">
+          <img src="Ícones/Visão.png" alt="Visão">
+        </div>
+        <h3>Visão</h3>
+        <p>
+          Ser reconhecida como uma empresa referência em polimento técnico e acabamento
+          de metais, destacando-se pela qualidade dos serviços, inovação nos processos
+          e confiança construída com nossos clientes e parceiros.
+        </p>
+      </article>
+
+      <article class="card mvv-card reveal">
+        <div class="mvv-icon">
+          <img src="Ícones/Valores.png" alt="Valores">
+        </div>
+        <h3>Valores</h3>
+        <ul class="mvv-list">
+          <li><strong>Qualidade</strong> – Alto padrão em cada peça.</li>
+          <li><strong>Compromisso</strong> – Prazos e responsabilidade.</li>
+          <li><strong>Excelência</strong> – Evolução constante.</li>
+          <li><strong>Transparência</strong> – Confiança em primeiro lugar.</li>
+          <li><strong>Cliente no centro</strong> – Atenção e dedicação.</li>
+          <li><strong>Melhoria contínua</strong> – Inovação e eficiência.</li>
+        </ul>
+      </article>
     </div>
+  </section>
 
-    <div class="card reveal">
-      <img src="Imagens/Industria.png" alt="Polimento Industrial">
-      <h3>Polimento Industrial</h3>
-      <p>
-        Processos voltados à produção em escala, com alta produtividade,
-        padronização de acabamento e redução de custos operacionais.
-      </p>
-    </div>
-  </div>
-</section>
+  <!-- CONTATO -->
+  <section id="contato" class="section contato-area">
+    <div class="contato-grid">
 
-<!-- PRODUTOS -->
-<section id="produtos" class="section">
-  <h2>O que Polimos</h2>
+      <div class="mapa">
+        <h3>Nossa Localização</h3>
+        <p>Rua Exemplo, 123 – Jardim Exemplo – Sua Cidade/SP</p>
 
-  <div class="grid-4 reveal">
-    <div class="card simple">Cubas de Pia</div>
-    <div class="card simple">Peças em Inox</div>
-    <div class="card simple">Componentes Industriais</div>
-    <div class="card simple">Peças Sob Medida</div>
-  </div>
-</section>
-
-<!-- VÍDEOS -->
-<section id="videos" class="section dark">
-  <h2>Vídeos dos Trabalhos</h2>
-
-  <div class="videos reveal">
-    <div class="video">Vídeo demonstrativo 1</div>
-    <div class="video">Vídeo demonstrativo 2</div>
-    <div class="video">Vídeo demonstrativo 3</div>
-  </div>
-</section>
-
-</section>
-
-<!-- MVV (Missão, Visão e Valores) -->
-<section id="mvv" class="section mvv">
-  <div class="mvv-header">
-    <span class="mvv-badge">Quem somos</span>
-    <h2>Missão, Visão e Valores</h2>
-    <p>
-      Nosso compromisso é entregar acabamento de alto padrão, valorizando cada peça
-      com qualidade, segurança e eficiência.
-    </p>
-  </div>
-
-  <div class="mvv-grid">
-    <div class="card mvv-card reveal">
-      <div class="mvv-icon">
-        <img src="Ícones/Missão.png" alt="Missão">
+        <iframe
+          src="https://www.google.com/maps?q=Cordeirópolis-SP&output=embed"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
       </div>
-      <h3>Missão</h3>
-      <p>
-        Oferecer serviços especializados de polimento em metais com excelência,
-        proporcionando acabamento de alto padrão, valorização das peças e maior
-        durabilidade dos materiais. Nosso compromisso é atender cada cliente com
-        qualidade, agilidade e precisão, contribuindo para a redução de desperdícios
-        e aumento do valor final dos produtos.
-      </p>
-    </div>
 
-    <div class="card mvv-card reveal">
-       <div class="mvv-icon">
-        <img src="Ícones/Visão.png" alt="Visão">
+      <div class="formulario">
+        <h3>Solicite seu orçamento personalizado!</h3>
+
+        <form id="form-orcamento" class="form-premium">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+          <label for="servico">Produtos / Serviços</label>
+          <textarea id="servico" name="mensagem" placeholder="Descreva o que precisa ser polido" required></textarea>
+
+          <button type="submit" class="btn" id="btn-enviar">
+            Enviar Orçamento ✈
+          </button>
+
+          <p id="form-status" class="form-status"></p>
+        </form>
       </div>
-      <h3>Visão</h3>
-      <p>
-        Ser reconhecida como uma empresa referência em polimento técnico e acabamento
-        de metais, destacando-se pela qualidade dos serviços, inovação nos processos
-        e confiança construída com nossos clientes e parceiros.
-      </p>
-    </div>
 
-    <div class="card mvv-card reveal">
-       <div class="mvv-icon">
-        <img src="Ícones/Valores.png" alt="Valores">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-area">
+    <div class="footer-grid">
+
+      <div>
+        <h4>Sobre Nós</h4>
+        <p>
+          Com anos de experiência em polimento profissional, a Pedrosa Polimento
+          Geral é referência em acabamento espelhado, qualidade e alto padrão
+          para peças em inox e aplicações industriais.
+        </p>
       </div>
-      <h3>Valores</h3>
-      <ul class="mvv-list">
-        <li><strong>Qualidade</strong> – Alto padrão em cada peça.</li>
-        <li><strong>Compromisso</strong> – Prazos e responsabilidade.</li>
-        <li><strong>Excelência</strong> – Evolução constante.</li>
-        <li><strong>Transparência</strong> – Confiança em primeiro lugar.</li>
-        <li><strong>Cliente no centro</strong> – Atenção e dedicação.</li>
-        <li><strong>Melhoria contínua</strong> – Inovação e eficiência.</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
-<section id="contato" class="section contato-area">
-  <div class="contato-grid">
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li>Polimento de Inox</li>
+          <li>Polimento de Cubas</li>
+          <li>Polimento Industrial</li>
+          <li>Acetinamento com Scotch-Brite</li>
+        </ul>
+      </div>
 
-    <!-- MAPA -->
-    <div class="mapa">
-      <h3>Nossa Localização</h3>
-      <p>Rua Exemplo, 123 – Jardim Exemplo – Sua Cidade/SP</p>
+      <div>
+        <h4>Contato</h4>
 
-      <iframe
-        src="https://www.google.com/maps?q=Cordeirópolis-SP&output=embed"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-    </div>
+        <p class="contato-item">
+          <img src="Ícones/email.png" alt="Email" class="icone-footer">
+          <a href="mailto:pedrosapolimento@gmail.com">
+            pedrosapolimento@gmail.com
+          </a>
+        </p>
 
-    <!-- FORMULÁRIO -->
-    <div class="formulario">
-      <h3>Solicite seu orçamento personalizado!</h3>
+        <p class="contato-item">
+          <img src="Ícones/whatsapp.png" alt="WhatsApp" class="icone-footer">
+          <a href="https://wa.me/5511958882439" target="_blank">
+            (11) 95888-2439
+          </a>
+        </p>
 
-      <form>
-        <label>Nome</label>
-        <input type="text" placeholder="Seu nome">
+        <p>Rua Exemplo, 123 – Sua Cidade/SP</p>
+      </div>
 
-        <label>E-mail</label>
-        <input type="email" placeholder="seu@email.com">
-
-        <label>Telefone</label>
-        <input type="tel" placeholder="(00) 00000-0000">
-
-        <label>Produtos / Serviços</label>
-        <textarea placeholder="Descreva o que precisa ser polido"></textarea>
-
-        <button type="submit" class="btn">
-          Enviar Orçamento ✈
-        </button>
-      </form>
     </div>
 
-  </div>
-</section>
-
-<footer class="footer-area">
-  <div class="footer-grid">
-
-    <!-- SOBRE -->
-    <div>
-      <h4>Sobre Nós</h4>
-      <p>
-        Com anos de experiência em polimento profissional, a Pedrosa Polimento
-        Geral é referência em acabamento espelhado, qualidade e alto padrão
-        para peças em inox e aplicações industriais.
-      </p>
+    <div class="footer-copy">
+      © 2026 Pedrosa Polimento Geral — Todos os direitos reservados
     </div>
+  </footer>
 
-    <!-- SERVIÇOS -->
-    <div>
-      <h4>Serviços</h4>
-      <ul>
-        <li>Polimento de Inox</li>
-        <li>Polimento de Cubas</li>
-        <li>Polimento Industrial</li>
-        <li>Restauração de Superfícies</li>
-      </ul>
-    </div>
-
-    <!-- CONTATO -->
-    <div>
-      <h4>Contato</h4>
-      <p><strong>Email:</strong> pedrosapolimento@gmail.com</p>
-      <p><strong>Telefone:</strong> (00) 00000-0000</p>
-      <p>Rua Exemplo, 123 – Sua Cidade/SP</p>
-    </div>
-
-  </div>
-
-  <div class="footer-copy">
-    © 2026 Pedrosa Polimento Geral — Todos os direitos reservados
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
