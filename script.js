@@ -229,7 +229,7 @@ Telefone: ${telefone}
 Produtos / Serviços:
 ${mensagem}`;
 
-        const numeroWhatsapp = "5511911230474";
+        const numeroWhatsapp = "551195888-2439";
 
         const url =
         `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(textoWhatsapp)}`;
